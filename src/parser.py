@@ -8,6 +8,60 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Input file containing URLs
 URL_FILE = "../input/urls.txt"
 
+# JD input per URL, set low for cost savings
+MAX_CHARS = 100000
+
+def extract_job_description(soup: BeautifulSoup) -> str:
+    """
+    Extract job description text from a BeautifulSoup object.
+    Balances capturing relevant sections without returning an entire noisy page.
+    """
+    
+    known_selectors = [
+         '#jobDescription',
+        '.job-description',
+        '.jobDescription',
+        '.description',
+        '.jobdesc'
+        ];
+    
+    collected_sections = []
+    
+    for selector in known_selectors:
+        element = soup.select_one(selector)
+        if element:
+            text = element.get_text(separator="\n", strip=True)
+            if text:
+                collected_sections.append(text)
+    
+    
+    if collected_sections:
+        return "\n\n".join(collected_sections)
+    
+    keywords = ['responsibilities', 'requirements', 'qualifications', 'skills', 'benefits']
+    sections = soup.find_all(['div', 'section'])
+    
+    for section in sections:
+        section_text = section.get_text(separator="\n", strip=True)
+        lowercase_text = section_text.lower()
+        
+        if any(kw in lowercase_text for kw in keywords):
+            # skip v short sections
+            if len(section_text) > 50:
+                collected_sections.append(section_text)
+        
+    if not collected_sections:
+        page_text = soup.get_text(separator="\n", strip=True)
+        return page_text
+    
+    combined_text = "\n\n".join(collected_sections)
+    
+    if len(combined_text) > MAX_CHARS:
+        combined_text = combined_text[:MAX_CHARS] + "\n[TRUNCATED]"
+        
+    return combined_text
+    
+    
 def fetch_and_parse_url(url):
     """
     Fetch a URL and parse the main content using BeautifulSoup.
@@ -18,9 +72,9 @@ def fetch_and_parse_url(url):
 
         # Parse the content
         soup = BeautifulSoup(response.content, 'html.parser')
-        text = soup.get_text(separator="\n", strip=True)
+        job_description = extract_job_description(soup)
 
-        return text
+        return job_description
     except requests.exceptions.RequestException as e:
         print(f"Error fetching {url}: {e}")
         return None
