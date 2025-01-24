@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+config/config-dev.json
+
+input/resume.tex
+output
+
 # Distribution / packaging
 .Python
 build/
