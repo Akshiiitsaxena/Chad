@@ -46,9 +46,7 @@ def extract_job_description(soup: BeautifulSoup) -> str:
         lowercase_text = section_text.lower()
         
         if any(kw in lowercase_text for kw in keywords):
-            # skip v short sections
-            if len(section_text) > 50:
-                collected_sections.append(section_text)
+            collected_sections.append(section_text)
         
     if not collected_sections:
         page_text = soup.get_text(separator="\n", strip=True)
