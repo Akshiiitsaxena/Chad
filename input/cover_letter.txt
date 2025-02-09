@@ -1,0 +1,6 @@
+To Hiring Manager,
+Having worked at a large corporation like Optum, UnitedHealth Group as well as at a lean YCombinator startup PayCrunch (YC 2022), I believe I possess the right set of skills to contribute to your company.
+I have built Spring Boot APIs from the ground up, built production grade cross platform applications using Flutter that serve a user base of 50,000+. I have also successfully deployed a CI/CD pipeline to automatically build, deploy and distribute applications across various platforms.
+In a recent cloud computing project, I engineered Cloud Native Information System using Spring Boot, AWS, and Terraform. The project included secure authentication, profile picture uploads to AWS S3, and a serverless notification system leveraging AWS SNS and Lambda for dispatching domain-verified email notifications. I also automated infrastructure deployment using GitHub Actions, implemented custom AMI generation with Packer, and ensured zero-downtime rolling updates across AWS EC2 instances.
+In addition, I have worked as an independent freelance Flutter developer to help clients realise their vision for the product. This gives me a key insight in managing expectations, delivering on hard deadlines and without compromise.
+Thank you for considering my application. Akshit Saxena

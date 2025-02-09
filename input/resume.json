@@ -1,0 +1,104 @@
+{
+  "name": "Akshit Saxena",
+  "contact": {
+    "location": "Boston, MA",
+    "phone": "857-544-2908",
+    "email": "saxena.aksh@northeastern.edu",
+    "link1": "linkedin.com/in/akshit--saxena",
+    "link2": "github.com/Akshiiitsaxena"
+  },
+  "education": [
+    {
+      "institution": "Northeastern University",
+      "location": "Boston, MA",
+      "degree": "Master of Science in Software Engineering Systems (GPA: 3.8)",
+      "timeline": "Jan 2024 - Dec 2025"
+    },
+    {
+      "institution": "Manipal Institute of Technology",
+      "location": "Manipal, India",
+      "degree": "Bachelor of Technology in Computer Science Engineering",
+      "timeline": "Jul 2017 - Jun 2021"
+    }
+  ],
+  "skills": {
+    "languages": "Java, Python, JavaScript, TypeScript, Dart, Swift, SQL, GSQL, HTML, CSS",
+    "frameworks": "Spring Boot, Spring MVC, Firebase, Flutter, React, ExpressJS, Mongoose, RabbitMQ",
+    "tools": "GitHub Actions, Jenkins, XCode, AWS, Visual Studio AppCenter, Slack Hooks",
+    "cloud": "AWS (EC2, RDS, ELB, Lambda, S3, Route53, SNS, KMS, CloudWatch), Terraform, Packer",
+    "databases": "MySQL, PostgreSQL, TigerGraphDB, Neo4j, MongoDB, Cloud Firestore",
+    "certifications": "RHCSV RedHat Certified Specialist in Virtualization - ID: 190-176-776",
+    "achievements": "3rd place in EasyA x Stacks Harvard Blockchain Hackathon - Prize: $2,000"
+  },
+  "experience": [
+    {
+      "company": "PayCrunch (YCombinator 2022)",
+      "location": "Bangalore, India",
+      "position": "Full Stack Developer",
+      "timeline": "Jul 2022 - Nov 2023",
+      "responsibilities": [
+        "Built and maintained the PayCrunch Flutter app for 50k+ users, leveraging Riverpod and WebEngage for analytics",
+        "Deployed biometric authentication and geo-tracking, reducing account spoofing by 18%",
+        "Set up CI/CD pipelines for iOS with Visual Studio AppCenter and GitHub Actions, enabling swift app releases",
+        "Collaborated with a 12-person team to take the app from concept to production within tight deadlines",
+        "Optimized payment flows, improving app responsiveness and reducing transaction failures by over 20%",
+        "Implemented custom Mixpanel analytics to gain deeper insights into user behavior",
+        "Developed scalable APIs with NodeJS and ExpressJS for backend data integration"
+      ]
+    },
+    {
+      "company": "Optum, UnitedHealth Group",
+      "location": "Bangalore, India",
+      "position": "Associate Software Engineer - I",
+      "timeline": "Aug 2021 - Jul 2022",
+      "responsibilities": [
+        "Built REST APIs using Spring Boot, implementing JWT authentication and Redis caching to enhance scalability",
+        "Optimized TigerGraph query performance in the healthcare graph database, reducing execution time 13%",
+        "Streamlined deployment processes by implementing Jenkins CI pipelines, ensuring faster and error-free releases",
+        "Collaborated on the migration of cloud infrastructure from RedHat OpenShift to Google Anthos, contributing to a more scalable environment",
+        "Refactored backend services to minimize errors and simplify integration with downstream systems",
+        "Documented workflows and system architecture, improving onboarding efficiency for new engineers"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Cloud Native User System",
+      "technologies": [
+        "Spring Boot",
+        "AWS",
+        "GitHub Actions",
+        "Terraform",
+        "SNS",
+        "Lambda",
+        "Route53"
+      ],
+      "highlights": [
+        "Developed a Cloud Native Spring Boot application with user management and profile picture uploads to AWS S3",
+        "Architected a serverless notification system using AWS SNS and Lambda, enabling event-driven email notifications",
+        "Engineered a CI/CD pipeline with GitHub Actions for seamless infrastructure deployment and rolling updates",
+        "Utilized Packer for custom AMI generation, reducing EC2 instance provisioning time by 50%",
+        "Managed domain and DNS with Route53, ensuring optimal availability and performance for the application",
+        "Implemented zero-downtime rolling updates with Auto Scaling and Load Balancing across AWS EC2 instances, enhancing application uptime and scalability"
+      ]
+    },
+    {
+      "title": "EcoEngage Portal",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Redux",
+        "ExpressJS",
+        "MongoDB",
+        "PWA"
+      ],
+      "highlights": [
+        "Developed a PWA to connect users with local sustainability events, enhancing community engagement",
+        "Integrated Google Maps API to visualize nearby events and display real-time environmental statistics",
+        "Built and maintained RESTful APIs with ExpressJS and MongoDB to handle user posts and event management",
+        "Implemented Redux for efficient state management, ensuring smooth app performance across components",
+        "Ensured cross-browser compatibility and accessibility compliance with WCAG standards for inclusivity"
+      ]
+    }
+  ]
+}
