@@ -43,7 +43,7 @@ def generate_response(job_description, base_resume, base_cover_letter):
             response_format=Output
         )
         
-        response_json = json.loads(response.choices[0].message.content)
+        response_json = response.choices[0].message.content
         
         return response_json
 

@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+from handlers.pdf_handler import process_response
 import util.parser as parser
 
 from pydantic import ValidationError
@@ -72,7 +73,7 @@ def process_urls():
         base_cover_letter = f.read()
     
     response = generate_response(job_description, base_resume, base_cover_letter)
-    print(response)
+    process_response(response)
 
 
 if __name__ == "__main__":
