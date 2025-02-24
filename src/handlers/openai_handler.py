@@ -2,11 +2,10 @@ from openai import OpenAI
 import json
 import os
 
-import prompt
-from output_model import Output
+import util.prompt as prompt
+from model.output_model import Output
 
 # Load API key from config 
-# TODO: update for prod
 CONFIG_FILE = "../config/config.json"
 
 def load_api_key():
@@ -39,7 +38,7 @@ def generate_response(job_description, base_resume, base_cover_letter):
             messages=[{"role": "system", "content": system_prompt},
                       {"role": "user", "content": user_prompt}],
             max_tokens=10000,
-            temperature=0.9,  # Creativity level
+            temperature=0.8,  # Creativity level
             store=True,
             response_format=Output
         )
