@@ -1,6 +1,17 @@
-To Hiring Manager,
-Having worked at a large corporation like Optum, UnitedHealth Group as well as at a lean YCombinator startup PayCrunch (YC 2022), I believe I possess the right set of skills to contribute to your company.
-I have built Spring Boot APIs from the ground up, built production grade cross platform applications using Flutter that serve a user base of 50,000+. I have also successfully deployed a CI/CD pipeline to automatically build, deploy and distribute applications across various platforms.
-In a recent cloud computing project, I engineered Cloud Native Information System using Spring Boot, AWS, and Terraform. The project included secure authentication, profile picture uploads to AWS S3, and a serverless notification system leveraging AWS SNS and Lambda for dispatching domain-verified email notifications. I also automated infrastructure deployment using GitHub Actions, implemented custom AMI generation with Packer, and ensured zero-downtime rolling updates across AWS EC2 instances.
-In addition, I have worked as an independent freelance Flutter developer to help clients realise their vision for the product. This gives me a key insight in managing expectations, delivering on hard deadlines and without compromise.
-Thank you for considering my application. Akshit Saxena
+Dear Hiring Manager,
+
+I am excited to apply for the [Data Analyst / Business Analyst] position at [Company Name]. With a strong background in data analytics, business intelligence, and process optimization, I am eager to contribute my skills to support data-driven decision-making at your organization.
+
+In my previous roles at ABC Analytics and XYZ Corporation, I worked extensively with SQL, Python, Power BI, and Excel to analyze large datasets, generate actionable insights, and develop automated reporting solutions. I have experience building interactive dashboards, optimizing workflows, and leveraging predictive modeling to enhance business outcomes. Through collaboration with cross-functional teams, I have successfully improved forecasting accuracy, operational efficiency, and customer segmentation strategies.
+
+A few key highlights of my experience include:
+	•	Developed Power BI dashboards that reduced manual reporting time by 40% and improved executive decision-making.
+	•	Implemented predictive analytics using Python and Scikit-Learn, enabling more accurate customer churn predictions.
+	•	Optimized SQL queries and automated data pipelines, reducing data processing time by 30%.
+	•	Led process improvement initiatives, enhancing data integrity and operational efficiency across departments.
+
+I am particularly drawn to your company because of its commitment to leveraging data for strategic growth. My analytical mindset, technical expertise, and ability to translate complex data into meaningful insights make me a strong candidate for this role. I look forward to the opportunity to discuss how my skills align with your team’s objectives.
+
+Thank you for your time and consideration. I would love the opportunity to further discuss my candidacy.
+
+Best regards,
